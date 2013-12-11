@@ -1,19 +1,21 @@
 // put logo before heading
 h1 Esoterik
 
-.navbar.navbar-default
-  .container
-    .collapse.navbar-collapse
-      ul.nav.navbar-nav
-        li(class=title=='Home'?'active':undefined)
-          a(href='/') Home
-        li(class=title=='API Browser'?'active':undefined)
-          a(href='/api') Live
-        li(class=title=='Contact'?'active':undefined)
-          a(href='/contact') Discography
-        li(class=title=='Contact'?'active':undefined)
-          a(href='/contact') Bio
-        li(class=title=='Contact'?'active':undefined)
-          a(href='/contact') Photos
-        li(class=title=='Contact'?'active':undefined)
-          a(href='/contact') Contact
+.navbar.navbar-default(role='navigation')
+  ul.nav.navbar-nav
+    li.active
+      a(href='#') Home
+    li
+      a(href='#about') Live
+    li
+      a(href='#contact') Discography
+    li
+      a(href='#contact') Bio
+    li
+      a(href='#contact') Photos
+    li
+      a(href='#contact') Videos
+    li
+      a(href='#contact') Press
+    li
+      a(href='#contact') Contact

@@ -1,10 +1,21 @@
 doctype 5
 html
   head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='description', content='')
+    meta(name='author', content='')
     title= title
-    link(href='http://fonts.googleapis.com/css?family=Ruda:300,400,700', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Ruda:300,400,700')
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/non-responsive.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js')
 body
   include header
   block content
   include footer
+  script(src='/javascripts/jquery.js')
+  script(src='/javascripts/bootstrap.js')

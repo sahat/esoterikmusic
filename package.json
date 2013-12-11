@@ -8,6 +8,8 @@
   "dependencies": {
     "express": "3.4.6",
     "jade": "*",
-    "stylus": "*"
+    "stylus": "*",
+    "underscore": "*",
+    "async": "*"
   }
 }

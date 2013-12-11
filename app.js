@@ -1,8 +1,12 @@
+// TODO: real-time chat with node.js
+// TODO: Facebook Like, Twitter share button on news
+// TODO: News stored in markdown files
+// TODO: Mediaelement.js for playing music and videos
+// TODO:
 
 /**
  * Module dependencies.
  */
-
 var express = require('express');
 var routes = require('./routes');
 var user = require('./routes/user');

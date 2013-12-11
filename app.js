@@ -32,9 +32,29 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', function(req, res){
-  res.render('home', { title: 'Express' });
+  res.render('home', { title: 'Home' });
 });
-app.get('/bio', bio.index);
+app.get('/bio', function(req, res) {
+  res.render('bio', { title: 'Biography' });
+});
+app.get('/contact', function(req, res) {
+  res.render('contact', { title: 'Contact' });
+});
+app.get('/discography', function(req, res) {
+  res.render('discography', { title: 'Discography' });
+});
+app.get('/live', function(req, res) {
+  res.render('live', { title: 'Live' });
+});
+app.get('/photos', function(req, res) {
+  res.render('photos', { title: 'Photos' });
+});
+app.get('/press', function(req, res) {
+  res.render('press', { title: 'Press' });
+});
+app.get('/videos', function(req, res) {
+  res.render('videos', { title: 'Videos' });
+});
 
 app.listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

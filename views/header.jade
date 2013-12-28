@@ -1,21 +1,26 @@
-// put logo before heading
-h1 Esoterik
-
 .navbar.navbar-inverse
+  .navbar-brand
+    a(href='/') Esoterik
   ul.nav.navbar-nav
-    li.active
+    li(class=title=='Home'?'active':undefined)
       a(href='/') Home
-    li
+    li(class=title=='Live'?'active':undefined)
       a(href='/live') Live
-    li
+    li(class=title=='Discography'?'active':undefined)
       a(href='/discography') Discography
-    li
+    li(class=title=='Biography'?'active':undefined)
       a(href='/bio') Bio
-    li
+    li(class=title=='Photos'?'active':undefined)
       a(href='/photos') Photos
-    li
+    li(class=title=='Videos'?'active':undefined)
       a(href='/videos') Videos
-    li
+    li(class=title=='Press'?'active':undefined)
       a(href='/press') Press
-    li
+    li(class=title=='Contact'?'active':undefined)
       a(href='/contact') Contact
+
+#slider.nivoSlider
+  a(href='#')
+    img(src='http://www.themes.red-sun-design.com/soundboard/wp-content/uploads/2012/06/catslide_02.jpg', alt='', title='Get the new single on iTunes')
+  .nivo-caption(style='opacity: 0.85; cursor: pointer;')
+    p(style='display: inline-block;') Out In Stores Now!

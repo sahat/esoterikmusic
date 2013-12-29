@@ -1,9 +1,9 @@
 extends layout
 
 block content
-  .row
-    .col-sm-9
-      .well
+  .well
+    .row
+      .col-sm-8
         h2.title News
 
         .headline
@@ -38,6 +38,24 @@ block content
             | printer took a galley of type and scrambled it to make a type
             | specimen book. It has survived not only five centuries,
             | but also the leap into electronic typesetting.
-    .col-sm-3
-      .well
-        p Sidebar
+      .col-sm-4
+        h2.title Upcoming Events
+        ul.list-unstyled
+          li.event
+            .event-date
+              .event-day 14
+              .event-month Sep
+            .event-info
+              .event-city Los Angeles, CA
+              .event-venue LA Music Hall
+              .event-url
+                a.btn.btn-primary(href='#') Details
+          li.event
+            .event-date
+              .event-day 29
+              .event-month Oct
+            .event-info
+              .event-city Austin, TX
+              .event-venue Elysium
+              .event-url
+                a.btn.btn-primary(href='#') Details

@@ -68,9 +68,7 @@ body {
   border-top: 0;
 }
 
-.navbar-brand {
-  margin-left: -15px;
-}
+
 
 /* Always apply the floated nav */
 .navbar-nav {

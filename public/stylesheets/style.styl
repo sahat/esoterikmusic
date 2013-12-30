@@ -161,3 +161,391 @@ footer
     background-color: #808080
   }
 
+/* --- audio --- */
+
+.audio-single-col
+  margin-bottom: 20px;
+  width: 950px;
+  display: inline-block;
+  padding: 15px;
+
+
+.audio-home
+  float: left;
+  width: 200px;
+
+
+.audio-cover
+  float: left
+  width: 100px
+  margin-right: 10px
+
+
+.audio-single
+  float: right;
+  width: 695px;
+
+
+h2.audio-single-title
+  font-weight: 600;
+  margin-bottom: 20px;
+  top: -4px;
+  position: relative;
+  font-size: 24px;
+
+
+ul.audio-meta
+  margin-top: 16px;
+  display: inline-block;
+  font-size: 17px;
+
+
+.audio-meta span
+  font-weight: normal;
+  margin-right: 5px;
+  width: 95px;
+  display: inline-block;
+
+
+.audio-meta li
+  list-style: none;
+  margin-bottom: 8px;
+
+
+.audio-buy a
+  margin-top: 20px;
+  background: url("images/bar-opc.png");
+  margin-right: 5px;
+  margin-bottom: -3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  top: -18px;
+  float: left;
+  color: #fff;
+  padding: 5px 8px 5px 8px;
+  position: relative;
+  font-size: 17px;
+
+
+.audio-post
+  margin-top: 20px;
+
+/* --- audio widget --- */
+
+.widget-audio-title a {
+  font-weight: bold;
+  top: -5px;
+  left: 0px;
+  color: #fff;
+  position: relative;
+  font-size: 16px;
+}
+
+.widget-audio-title a:hover {
+  text-decoration: none;
+}
+
+.widget-audio-meta {
+  margin-top: 0px;
+  top: -2px;
+  color: #888;
+  position: relative;
+  font-size: 15px;
+}
+
+ul.widget-audio-meta {
+  margin-bottom: 27px;
+}
+
+.widget-audio-cover {
+  margin-right: 10px;
+  float: left;
+}
+
+ul.widget-audio-meta li {
+  margin-bottom: 3px;
+}
+
+.widget-audio-buy a {
+  background: url("images/bar-opc.png");
+  margin-right: 5px;
+  margin-bottom: -3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  top: -18px;
+  float: left;
+  color: #fff;
+  padding: 5px 8px 5px 8px;
+  position: relative;
+}
+
+.widget-audio-buy a:hover {
+  background: #333;
+  color: #fff;
+}
+
+#footer .widget-audio-title {
+  margin-top: 2px;
+}
+
+#footer .widget-audio-title a {
+  font-weight: bold;
+}
+
+#footer .widget-audio-title a:hover {
+  text-decoration: none;
+}
+
+#footer .widget-audio-meta {
+  margin-top: 0px;
+  color: #888;
+}
+
+#footer .widget-audio-meta li {
+  list-style: none;
+  margin-bottom: 3px;
+}
+
+#footer .widget-audio-cover {
+  float: left;
+  width: 0px;
+  height: 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+#footer .widget-audio-buy a {
+  margin-right: 5px;
+  margin-bottom: -3px;
+  text-decoration: none;
+  float: left;
+  color: #fff;
+  padding: 5px 8px 5px 8px;
+}
+
+
+/* -------------------------------------------
+    09. PLAYER
+   ------------------------------------------- */
+
+.audiojs {
+  background: url("../images/audiojs-bg.png");
+  font-family: monospace;
+  width: 270px;
+  height: 25px;
+  overflow: hidden;
+  font-size: 12px;
+}
+
+.audiojs .error-message {
+  line-height: 36px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-text-overflow: ellipsis;
+  -icab-text-overflow: ellipsis;
+  -khtml-text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis;
+  float: left;
+  width: 400px;
+  color: #fff;
+  height: 36px;
+  margin: 0px 10px;
+  display: none;
+  overflow: hidden;
+}
+
+.audiojs .error-message a {
+  white-space: wrap;
+  border-bottom: 1px solid #999;
+  padding-bottom: 1px;
+  text-decoration: none;
+  color: #eee;
+}
+
+.audiojs .play-pause {
+  border-right: 1px solid #444;
+  float: left;
+  width: 30px;
+  height: 40px;
+  margin: 0px;
+  padding: 4px 6px;
+  overflow: hidden;
+}
+
+.audiojs .progress {
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 5px;
+  z-index: 1;
+  position: absolute;
+}
+
+.audiojs .scrubber {
+  margin-top: 10px;
+  background: #000;
+  margin-left: 10px;
+  margin-right: 4px;
+  float: left;
+  width: 117px;
+  height: 5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.audiojs .loading {
+  background: url("../images/load-small.png") center center no-repeat;
+  width: 20px;
+  height: 18px;
+}
+
+.audiojs .loaded {
+  background: #444;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  height: 5px;
+  position: absolute;
+}
+
+.audiojs .error {
+  background: url("../images/error-small.png") center center no-repeat;
+  width: 20px;
+  height: 18px;
+}
+
+.audiojs .pause {
+  background: url("../images/pause-small.png")  center center no-repeat;
+  width: 20px;
+  height: 18px;
+}
+
+.audiojs .play {
+  background: url("../images/play-small.png") center center no-repeat;
+  width: 20px;
+  height: 18px;
+}
+
+.audiojs .time {
+  border-left: 1px solid #444;
+  line-height: 25px;
+  float: left;
+  color: #fff;
+  height: 25px;
+  margin: 0px 0px 0px 6px;
+  padding: 0px 10px 0px 8px;
+  font-size: 11px;
+}
+
+.audiojs .time strong {
+  font-weight: normal;
+  color: #888;
+  padding: 0px 0px 0px 2px;
+}
+
+.audiojs .time em {
+  font-style: normal;
+  color: #fff;
+  padding: 0px 2px 0px 0px;
+}
+
+.audiojs .play { display: block }
+
+.audiojs audio {
+  left: -1px;
+  position: absolute;
+}
+
+.audiojs p {
+  width: 25px;
+  height: 40px;
+  margin: 0px;
+  cursor: pointer;
+  display: none;
+}
+
+.playing .play, .playing .loading, .playing .error {
+  display: none;
+}
+
+.playing .pause {
+  display: block;
+}
+
+.loading .play, .loading .pause, .loading .error {
+  display: none;
+}
+
+.loading .loading {
+  display: block;
+}
+
+.error .time, .error .play, .error .pause, .error .scrubber, .error .loading {
+  display: none;
+}
+
+.error .error {
+  display: block;
+}
+
+.error .play-pause p {
+  cursor: auto;
+}
+
+.errorW .error-messageW {
+  display: block;
+}
+
+
+
+.playlist {
+  margin-top: -5px;
+  list-style: decimal inside;
+  padding: 0px;
+}
+
+.playlist li {
+  line-height: 30px;
+  border-bottom: 1px dashed #333;
+  color: #888;
+  cursor: pointer;
+  padding: 0px 5px 0px 5px;
+  position: relative;
+  font-size: 14px;
+}
+
+.playlist li:first-child {
+  margin-top: 15px;
+}
+
+.playlist li:last-child {
+  margin-bottom: -10px;
+}
+
+.playlist li a {
+  color: #fff;
+}
+
+.widget-play-list li.playing {
+
+}
+
+.playlist li.playing:before {
+  line-height: 14px;
+  top: 5px;
+  right: 3px;
+  width: 14px;
+  height: 14px;
+  margin: 0px;
+  padding: 3px;
+  content: url("../images/song-small.png");
+  position: absolute;
+}
+
+.playlist li.playing a {
+  color: #fff;
+}
+
+
+

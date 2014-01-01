@@ -8,7 +8,7 @@ block content
       p(style='display: inline-block;') Out In Stores Now!
   .well
     .row
-      .col-sm-8
+      .col-sm-8.col-xs-12
         h2.title News
         .headline
           .headline-title SB at the 2012 Reading and Leeds Festivals
@@ -42,41 +42,43 @@ block content
             | printer took a galley of type and scrambled it to make a type
             | specimen book. It has survived not only five centuries,
             | but also the leap into electronic typesetting.
-      .col-sm-4.col-fixed-250
-        h2.title Upcoming Events
-        ul.list-unstyled
-          li.event
-            .event-date
-              .event-day 14
-              .event-month Sep
-            .event-info
-              .event-city Los Angeles, CA
-              .event-venue LA Music Hall
-              .event-url
-                a.btn.btn-primary(href='#') Details
-          li.event
-            .event-date
-              .event-day 29
-              .event-month Oct
-            .event-info
-              .event-city Austin, TX
-              .event-venue Elysium
-              .event-url
-                a.btn.btn-primary(href='#') Details
-        br
-        h2.title Audio Player
-        .audio-meta.clearfix
-          img.audio-cover(src='/images/discography/enlightenment-small.jpg')
-          .audio-title Enlightenment
-          .text-muted January 1, 2014
-        audio(preload='preload')
-        ol.playlist
-          li
-            a(href='#', data-src='/music/Mantra_Eviction.mp3') Mantra Eviction
-          li
-            a(href='#', data-src='/music/Purgatory.mp3') Purgatory
-          li
-            a(href='#', data-src='/music/Flesh_and_Devine.mp3') Flesh and Devine
+      .col-sm-4.col-xs-12
+        .row
+          .col-sm-12.col-xs-6
+            h2.title Events
+            ul.list-unstyled
+              li.event
+                .event-date
+                  .event-day 14
+                  .event-month Sep
+                .event-info
+                  .event-city Los Angeles, CA
+                  .event-venue LA Music Hall
+                  .event-url
+                    a.btn.btn-primary(href='#') Details
+              li.event
+                .event-date
+                  .event-day 29
+                  .event-month Oct
+                .event-info
+                  .event-city Austin, TX
+                  .event-venue Elysium
+                  .event-url
+                    a.btn.btn-primary(href='#') Details
+          .col-sm-12.col-xs-6
+            h2.title Audio Player
+            .audio-meta.clearfix
+              img.audio-cover(src='/images/discography/enlightenment-small.jpg')
+              .audio-title Enlightenment
+              .text-muted January 1, 2014
+            audio(preload='preload')
+            ol.playlist
+              li
+                a(href='#', data-src='/music/Mantra_Eviction.mp3') Mantra Eviction
+              li
+                a(href='#', data-src='/music/Purgatory.mp3') Purgatory
+              li
+                a(href='#', data-src='/music/Flesh_and_Devine.mp3') Flesh and Devine
   script.
     $(function() {
         // Setup the player to autoplay the next track

@@ -10,6 +10,7 @@
     "jade": "*",
     "stylus": "*",
     "underscore": "*",
-    "async": "*"
+    "async": "*",
+    "forever": "*"
   }
 }
